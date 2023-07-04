@@ -1,0 +1,9 @@
+// JavaScript
+
+// Dados para alterar a sala de prova do candidato
+var cpf = "123456789";
+var novaSala = 2;
+
+// Requisição AJAX para alterar a sala de prova do candidato
+$.ajax({
+    url: "alter
