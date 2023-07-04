@@ -1,0 +1,21 @@
+// JavaScript
+
+// Dados do novo fiscal de prova
+var nome = "Fulano";
+var cpf = "123456789";
+var sala = 1;
+
+// Requisição AJAX para incluir o fiscal de prova
+$.ajax({
+    url: "incluir_fiscal.php",
+    method: "POST",
+    data: {
+        nome: nome,
+        cpf: cpf,
+        sala: sala
+    },
+    success: function(response) {
+        // Processar resposta do servidor
+        console.log(response);
+    }
+});

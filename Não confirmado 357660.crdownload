@@ -1,0 +1,11 @@
+// JavaScript
+
+// Requisição AJAX para obter os candidatos
+$.ajax({
+    url: "listar_candidatos.php",
+    method: "GET",
+    success: function(response) {
+        // Processar e exibir os candidatos
+        console.log(response);
+    }
+});
